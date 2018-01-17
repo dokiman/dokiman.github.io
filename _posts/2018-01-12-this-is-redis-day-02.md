@@ -9,10 +9,6 @@ feature_image: "https://kingbbode.github.io/images/2016/2016_12_04_Spring_Boot_R
 image: "https://kingbbode.github.io/images/2016/2016_12_04_Spring_Boot_Redis/redis.png"
 ---
 
----
-## This is redis Day-02
----
-
 ### NOSQL
 
   * NoSQL: 마틴 파울러의 "NoSQL: 빅데이터 세상으로 떠나는 간결한 안내서"에 의한 정의
