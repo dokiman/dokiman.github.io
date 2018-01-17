@@ -103,26 +103,25 @@ image: "https://cdn-images-1.medium.com/max/1600/1*4lAASSCG5h2QLClrjj-ClA.jpeg"
           public interface RowingBoat {
             void row();
           }
-        ```
-        ```java
-        /**
-         *
-         * Adapter class. Adapts the interface of the device ({@link FishingBoat}) into {@link RowingBoat}
-         * interface expected by the client ({@link Captain}).
-         *
-         */
-        public class FishingBoatAdapter implements RowingBoat {
-            private FishingBoat boat;
+                    
+          /**
+           *
+           * Adapter class. Adapts the interface of the device ({@link FishingBoat}) into {@link RowingBoat}
+           * interface expected by the client ({@link Captain}).
+           *
+           */
+          public class FishingBoatAdapter implements RowingBoat {
+              private FishingBoat boat;
 
-            public FishingBoatAdapter() {
-              boat = new FishingBoat();
-            }
+              public FishingBoatAdapter() {
+                boat = new FishingBoat();
+              }
 
-            @Override
-            public void row() {
-              boat.sail();
-            }
-        }
+              @Override
+              public void row() {
+                boat.sail();
+              }
+          }
         ```
 
 ### Aggregator Microservices Pattern
