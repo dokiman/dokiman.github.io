@@ -13,19 +13,15 @@ Dokiman is developer. And dokiman implies this my last name (do) + rabbit(like t
 
 ## Portfolio
 
-* KTH
-  - Java + Spring API Maintenance like [API Store Legacy System](https://www.apistore.co.kr/main_function.do)
-  - SOAP UI REST API Test
-
-  <img src="https://www.apistore.co.kr/images/renew_2017/vi_waple_01.gif"/>
-
-* Daumfoundation [Ollybolly](https://play.google.com/store/apps/details?id=org.ollybolly&hl=ko)
-  - PHP API Maintenance
-  - Android Mobile Application Maintenance
-    - UI Layout
+* Carffeine Motorcube Web Service, [Mobile Application](https://play.google.com/store/apps/details?id=com.carffeine.android&hl=ko)
+  - Ruby 2.x + Rails 4.x API Maintenance
+    - Web, Mobile API Development, Maintenance
+    - Infra Management (a little)
     - etc
 
-  <img src="http://file.newswire.co.kr/data/datafile2/thumb_480/2011/05/238345340_20110525092509_1101129176.jpg"/>
+  <img src="http://www.venturesquare.net/wp-content/uploads/2015/05/%EC%B9%B4%ED%8E%98%EC%9D%B8.png"/>
+  <img src="http://dimg.donga.com/wps/NEWS/IMAGE/2015/07/02/72229188.3.jpg"/>
+
 
 * Quicket [Bunjang Market](http://m.bunjang.co.kr/)
   - Python 3.x + Flask 1.x API Maintenance
@@ -35,11 +31,18 @@ Dokiman is developer. And dokiman implies this my last name (do) + rabbit(like t
 
   <img src="http://app.chosun.com/site/data/img_dir/2013/12/05/2013120501123_2.jpg"/>
 
-* Carffeine Motorcube Web Service, [Mobile Application](https://play.google.com/store/apps/details?id=com.carffeine.android&hl=ko)
-  - Ruby 2.x + Rails 4.x API Maintenance
-    - Web, Mobile API Development, Maintenance
-    - Infra Management (a little)
+
+* Daumfoundation [Ollybolly](https://play.google.com/store/apps/details?id=org.ollybolly&hl=ko)
+  - PHP API Maintenance
+  - Android Mobile Application Maintenance
+    - UI Layout
     - etc
 
-  <img src="http://www.venturesquare.net/wp-content/uploads/2015/05/%EC%B9%B4%ED%8E%98%EC%9D%B8.png"/>
-  <img src="http://dimg.donga.com/wps/NEWS/IMAGE/2015/07/02/72229188.3.jpg"/>
+  <img src="http://file.newswire.co.kr/data/datafile2/thumb_480/2011/05/238345340_20110525092509_1101129176.jpg"/>
+
+
+* KTH
+  - Java + Spring API Maintenance like [API Store Legacy System](https://www.apistore.co.kr/main_function.do)
+  - SOAP UI REST API Test
+
+  <img src="https://www.apistore.co.kr/images/renew_2017/vi_waple_01.gif"/>
