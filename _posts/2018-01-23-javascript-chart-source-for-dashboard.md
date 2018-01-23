@@ -1,6 +1,6 @@
 ---
 title: Javascript Chart Source For Dashboard
-category: Server
+category: Client
 excerpt: |
   Javascript Chart Source For Dashboard
 feature_text: |
