@@ -9,7 +9,7 @@ feature_image:
 image:
 ---
 
-### Siddhi Streaming SQL Guide 4.0
+### Siddhi Streaming SQL Guide 4.0 (2)
 
 ##### Mainly Siddhi Elements (2)
 
@@ -48,13 +48,33 @@ image:
           insert into TempDiffStream;
 
           - example (logical pattern)
+          1. sends the stop control action to the regulator when the key is removed from the hotel room.
+
           define stream RegulatorStateChangeStream(deviceID long, roomNo int, tempSet double, action string);
           define stream RoomKeyStream(deviceID long, roomNo int, action string);
-
 
           from every( e1=RegulatorStateChangeStream[ action == 'on' ] ) ->
                 e2=RoomKeyStream[ e1.roomNo == roomNo and action == 'removed' ] or e3=RegulatorStateChangeStream[ e1.roomNo == roomNo and action == 'off']
           select e1.roomNo, ifThenElse( e2 is null, 'none', 'stop' ) as action
           having action != 'none'
-insert into RegulatorActionStream;
+          insert into RegulatorActionStream;
+
+          2. generates an alert if we have switch off the regulator before the temperature reaches 12 degrees.
+
+          define stream RegulatorStateChangeStream(deviceID long, roomNo int, tempSet double, action string);
+          define stream TempStream (deviceID long, roomNo int, temp double);
+
+          from e1=RegulatorStateChangeStream[action == 'start'] -> not TempStream[e1.roomNo == roomNo and temp < 12] and e2=RegulatorStateChangeStream[action == 'off']
+          select e1.roomNo as roomNo
+          insert into AlertStream;
+
+          3. generates an alert if the temperature does not reduce to 12 degrees within 5 minutes of switching on the regulator.
+
+          define stream RegulatorStateChangeStream(deviceID long, roomNo int, tempSet double, action string);
+          define stream TempStream (deviceID long, roomNo int, temp double);
+
+          from e1=RegulatorStateChangeStream[action == 'start'] -> not TempStream[e1.roomNo == roomNo and temp < 12] for '5 min'
+          select e1.roomNo as roomNo
+          insert into AlertStream;
+
 ##### Grammar

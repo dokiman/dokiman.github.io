@@ -9,7 +9,7 @@ feature_image:
 image:
 ---
 
-### Siddhi Streaming SQL Guide 4.0
+### Siddhi Streaming SQL Guide 4.0 (1)
 
 ##### Mainly Siddhi Elements (1)
 
